@@ -10,3 +10,5 @@ eventfiles
 meals
 mensa-data
 userconfig
+
+.env
