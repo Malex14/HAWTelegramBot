@@ -23,7 +23,8 @@ export type Session = {
 	adminuserquicklook?: number; // User ID
 	adminuserquicklookfilter?: string;
 	eventfilter?: string;
-	generateChangeName?: string;
+	eventPath?: string[]; // Path to the selected subdirectory
+	generateChangeEventId?: EventId;
 	generateChangeDate?: NaiveDateTime;
 	generateChange?: Partial<Change>;
 	page?: number;
@@ -37,7 +38,7 @@ export type Session = {
 export type Userconfig = {
 	readonly admin?: true;
 	calendarfileSuffix: string;
-	events: Record<string, EventDetails>;
+	events: Record<EventId, EventDetails>;
 	mensa: MensaSettings;
 	removedEvents?: RemovedEventsDisplayStyle;
 };
@@ -80,6 +81,20 @@ export type MensaSettings = MealWishes & {
 	more?: readonly string[];
 	price?: MensaPriceClass;
 	showAdditives?: boolean;
+};
+
+export type EventId = `${number}_${number | string}`;
+
+export type Events = Record<EventId, string>;
+
+export type EventDirectory = {
+	readonly subDirectories?: Record<string, EventDirectory>;
+	readonly events?: Events;
+};
+
+export type EventSearchResult = {
+	subDirectories: Record<string, [EventDirectory, string[]]>; // Directory name, [directory content, directory path]
+	events: Events;
 };
 
 export type EventEntry = {
