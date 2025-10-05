@@ -52,6 +52,8 @@ function getCurrentSettings(ctx: MyContext): Readonly<{mensa?: string; date: Dat
 	if (!mensa || (now - date) > DAY_IN_MS) {
 		date = Date.now();
 		mensa = ctx.userconfig.mine.mensa.main;
+		ctx.session.mensa ??= {};
+		ctx.session.mensa.mensa = mensa;
 	}
 
 	return {mensa, date: new Date(date)};
