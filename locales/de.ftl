@@ -1,5 +1,6 @@
 help =
-  Dieser Bot hilft dir bei deinem Vorlesungskalender.
+  Dieser Bot hilft dir bei deinem Vorlesungskalender und ist ein Fork vom originalen @HAWHHCalendarBot, der von @EdJoPaTo geschrieben wurde.
+
   Trage unter /events deine Vorlesungen ein, die du dieses Semester besuchen wirst. Daraus wird ein Kalender für dich generiert, den du mit deinen Geräten abbonieren kannst. Anleitungen für dein Gerät gibts unter /subscribe.
 
   Wenn Veranstaltungen ausfallen oder sich ändern kannst du diese zur jeweiligen Veranstaltung ebenfalls unter /events eintragen. Diese Änderungen werden dann automatisch mit in deinen Kalender übernommen. Außerdem lassen sich die Änderungen teilen, sodass du auch anderen Leuten diese Änderung bereitstellen kannst.
@@ -55,7 +56,7 @@ subscribe-exchange =
 
   Der Kalender wird nun alle paar Stunden von Office.com aktualisiert. Wenn du dein Handy mit dem Office.com Account (Exchange) synchronisierst, ist der Kalender ebenfalls enthalten. Funktioniert mit iOS, Android und Gnome Online Accounts sehr entspannt und du hast gleich deine HAW E-Mails mit dabei.
 
-  Erinnerungen scheinen nicht zu funktionieren, da diese automatisch beim Abonnieren entfernt werden. Ein Deaktivieren des automatischen Löschens dieser habe ich leider bisher nicht gefunden. Hinweise gern an @EdJoPaTo 😇
+  Erinnerungen scheinen nicht zu funktionieren, da diese automatisch beim Abonnieren entfernt werden. Ein Deaktivieren des automatischen Löschens dieser habe ich leider bisher nicht gefunden.
 
 subscribe-google =
   <b>Kalender abonnieren mit dem Google Kalender</b>
@@ -67,11 +68,11 @@ subscribe-google =
 
   Nach dem Bestätigen einen Moment warten, bis der Kalender im Google Kalender erschienen ist.
 
-  Wenn dein Kalender "@HAWHHCalendarBot ({$firstname})" heißt, wie er eigentlich heißen soll, bist du ein glücklicher Sonderfall Googles und du bist fertig. Wenn dein Kalender jedoch den Namen der URL trägt, muss der Kalender umbenannt werden, damit dieser auf Android-Geräte synchronisiert wird. Verwende einen einfachen Namen dafür, den Google nicht überfordernd findet.
+  Wenn dein Kalender "@HAWCalendarBot ({$firstname})" heißt, wie er eigentlich heißen soll, bist du ein glücklicher Sonderfall Googles und du bist fertig. Wenn dein Kalender jedoch den Namen der URL trägt, muss der Kalender umbenannt werden, damit dieser auf Android-Geräte synchronisiert wird. Verwende einen einfachen Namen dafür, den Google nicht überfordernd findet.
 
   Fun Fact: Auf iOS-Geräte wird der Google Kalender unabhängig vom Namen fehlerfrei synchronisiert.
 
-  Erinnerungen scheinen nicht zu funktionieren, da diese automatisch beim Abonnieren entfernt werden. Ein Deaktivieren des automatischen Löschens dieser habe ich leider bisher nicht gefunden. Hinweise gern an @EdJoPaTo 😇
+  Erinnerungen scheinen nicht zu funktionieren, da diese automatisch beim Abonnieren entfernt werden. Ein Deaktivieren des automatischen Löschens dieser habe ich leider bisher nicht gefunden.
 
   ⚠️ In der Vergangenheit hat der Google Kalender jeweils zwischen 30 Minuten und 40 Stunden gebraucht, um einen Kalender zu aktualisieren. Außerdem cacht Google (meiner Meinung nach) ein wenig zu viel, was für teilweise interessantes/sonderbares Verhalten gesorgt hat.
 

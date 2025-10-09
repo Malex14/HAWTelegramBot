@@ -35,10 +35,10 @@ const bot = baseBot.errorBoundary(async ({error, ctx}) => {
 	);
 	let text = `🔥 Da ist wohl ein Fehler aufgetreten…
 
-Schreib mal @EdJoPaTo dazu an oder erstell ein ${
+Erstell bitte ein ${
 	format.url(
 		'Issue auf GitHub',
-		'https://github.com/HAWHHCalendarBot/TelegramBot/issues',
+		'https://github.com/malex_14/HAWTelegramBot/issues',
 	)
 }. Dafür findet sich sicher eine Lösung. ☺️
 
@@ -68,13 +68,13 @@ async function startMessage(ctx: MyContext) {
 	await ctx.reply(text, {
 		reply_markup: {
 			inline_keyboard: [
-				[
+				/* [
 					{
 						text: 'hawhh.de/calendarbot/',
 						url: 'https://hawhh.de/calendarbot/',
 					},
-				],
-				[{text: '🦑 Quellcode', url: 'https://github.com/HAWHHCalendarBot'}],
+				], */
+				[{text: '🦑 Quellcode', url: 'https://github.com/malex_14/HAWTelegramBot'}],
 			],
 		},
 	});

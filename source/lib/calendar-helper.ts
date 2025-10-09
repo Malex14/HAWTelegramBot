@@ -7,7 +7,7 @@ export function getUrl(id: number, userconfig: Userconfig): string {
 		filename += `-${calendarfileSuffix}`;
 	}
 
-	const full = `calendarbot.hawhh.de/tg/${filename}.ics`;
+	const full = `calendarbot.mbehrmann.de/${filename}.ics`;
 	return full;
 }
 

@@ -41,13 +41,13 @@ export const menu = new MenuTemplate<MyContext>(async ctx => {
 		text += 'Du hast aktuell keine Veranstaltungen in deinem Kalender. 😔';
 	}
 
-	text += '\n\n';
-	const additionalEventsLink = format.url(
+	// Text += '\n\n';
+	/* const additionalEventsLink = format.url(
 		'AdditionalEvents',
 		'https://github.com/HAWHHCalendarBot/AdditionalEvents',
-	);
-	text
-		+= `Du bist Tutor und deine Veranstaltung fehlt im Kalenderbot? Wirf mal einen Blick auf ${additionalEventsLink} oder schreib @EdJoPaTo an. ;)`;
+	); */
+	// text
+	//	+= `Du bist Tutor und deine Veranstaltung fehlt im Kalenderbot? Wirf mal einen Blick auf ${additionalEventsLink} oder schreib @EdJoPaTo an. ;)`;
 
 	return {
 		disable_web_page_preview: true,
