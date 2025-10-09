@@ -15,7 +15,7 @@ const appleMenu = new MenuTemplate(generateBody('apple'));
 appleMenu.url({
 	text: 'Kalender abonnieren',
 	url: ctx =>
-		`https://calendarbot.hawhh.de/ics.html?url=${getUrlFromContext(ctx)}`,
+		`https://calendarbot.mbehrmann.de?url=${getUrlFromContext(ctx)}`,
 });
 appleMenu.manualRow(backMainButtons);
 menu.submenu('apple', appleMenu, {text: '🍏 iOS / macOS'});
@@ -47,7 +47,7 @@ const freestyleMenu = new MenuTemplate(generateBody('freestyle'));
 freestyleMenu.url({
 	text: 'Kalender abonnieren',
 	url: ctx =>
-		`https://calendarbot.hawhh.de/ics.html?url=${getUrlFromContext(ctx)}`,
+		`https://calendarbot.mbehrmann.de?url=${getUrlFromContext(ctx)}`,
 });
 freestyleMenu.manualRow(backMainButtons);
 menu.submenu('freestyle', freestyleMenu, {text: 'Freestyle 😎'});

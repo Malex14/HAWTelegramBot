@@ -18,7 +18,7 @@ export const menu = new MenuTemplate<MyContext>(async ctx => {
 	);
 	const githubIssues = format.url(
 		'GitHub',
-		'https://github.com/HAWHHCalendarBot/telegrambot/issues',
+		'https://github.com/malex_14/HAWTelegramBot/issues',
 	);
 
 	let text = '';
@@ -28,10 +28,12 @@ export const menu = new MenuTemplate<MyContext>(async ctx => {
 	text
 		+= 'Wenn ich für dich hilfreich bin, dann erzähl gern anderen von mir, denn ich will gern allen helfen, denen noch zu helfen ist. ☺️';
 	text += '\n\n';
-	text += `Wie ich funktioniere wird auf ${websiteLink} genauer beschrieben.`;
+	text += `Wie der originale Bot funktioniert wird auf ${websiteLink} genauer beschrieben.`;
+	text += '\n';
+	text += 'Dieser Fork wurde aufgrund der Umstellung der Veranstaltungspläne auf myHAW erstellt.';
 	text += '\n';
 	text
-		+= `Du hast Probleme, Ideen oder Vorschläge, was ich noch können sollte? Dann wende dich an @EdJoPaTo oder erstelle ein Issue auf ${githubIssues}.`;
+		+= `Du hast Probleme, Ideen oder Vorschläge, was ich noch können sollte? Dann erstelle ein Issue auf ${githubIssues}.`;
 
 	return {
 		disable_web_page_preview: true,
@@ -46,16 +48,24 @@ menu.url({
 });
 
 menu.url({
-	text: '😌 PayPal Spende',
+	text: '😌 PayPal Spende an den ursprünglichen Autor',
 	url: 'https://www.paypal.com/donate?hosted_button_id=L2EMBSGTEXK42',
 });
 
 menu.url({
-	text: '🦑 Quellcode',
-	url: 'https://github.com/HAWHHCalendarBot',
+	text: '🦑 Quellcode Bot',
+	url: 'https://github.com/Malex14/HAWTelegramBot',
 });
 menu.url({
+	text: '🦑 Quellcode Parer',
+	url: 'https://github.com/Malex14/parser',
+});
+menu.url({
+	text: '🦑 Quellcode Scraper',
+	url: 'https://github.com/Malex14/hio_timetable_extractor',
+});
+/* Menu.url({
 	joinLastRow: true,
 	text: '🦑 Änderungshistorie',
 	url: 'https://github.com/HAWHHCalendarBot/TelegramBot/releases',
-});
+}); */
