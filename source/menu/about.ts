@@ -18,7 +18,7 @@ export const menu = new MenuTemplate<MyContext>(async ctx => {
 	);
 	const githubIssues = format.url(
 		'GitHub',
-		'https://github.com/malex_14/HAWTelegramBot/issues',
+		'https://github.com/malex14/HAWTelegramBot/issues',
 	);
 
 	let text = '';
