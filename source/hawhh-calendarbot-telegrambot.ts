@@ -38,7 +38,7 @@ const bot = baseBot.errorBoundary(async ({error, ctx}) => {
 Erstell bitte ein ${
 	format.url(
 		'Issue auf GitHub',
-		'https://github.com/malex14/HAWTelegramBot/issues',
+		'https://github.com/Malex14/HAWTelegramBot/issues',
 	)
 }. Dafür findet sich sicher eine Lösung. ☺️
 
@@ -74,7 +74,7 @@ async function startMessage(ctx: MyContext) {
 						url: 'https://hawhh.de/calendarbot/',
 					},
 				], */
-				[{text: '🦑 Quellcode', url: 'https://github.com/malex14/HAWTelegramBot'}],
+				[{text: '🦑 Quellcode', url: 'https://github.com/Malex14/HAWTelegramBot'}],
 			],
 		},
 	});

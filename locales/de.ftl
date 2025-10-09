@@ -22,7 +22,7 @@ website-stalker-help =
 
 privacy-overview =
   Auf dem Server wird geloggt, wenn Aktionen von Nutzern zu einem neu Bauen von Kalendern oder ungewollten Fehlern führen. Diese Logs werden nicht persistent gespeichert und sind nur bis zum Neustart des Servers verfügbar.
-  Der Quellcode dieses Bots ist auf <a href="https://github.com/HAWHHCalendarBot">GitHub</a> verfügbar.
+  Der Quellcode dieses Bots ist auf <a href="https://github.com/Malex14/HAWTelegramBot">GitHub</a> verfügbar.
 
 privacy-telegram =
   Jeder Telegram Bot kann diese User Infos abrufen, wenn du mit ihm interagierst. Um dies zu verhindern, blockiere den Bot.

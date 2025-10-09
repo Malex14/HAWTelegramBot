@@ -73,7 +73,7 @@ menu.select('section', {
 	},
 });
 
-menu.url({text: '🦑 Quellcode', url: 'https://github.com/HAWHHCalendarBot'});
+menu.url({text: '🦑 Quellcode', url: 'https://github.com/Malex14/HAWTelegramBot'});
 
 const deleteAllQuestion = new StatelessQuestion<MyContext>(
 	'delete-everything',
