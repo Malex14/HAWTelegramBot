@@ -57,7 +57,7 @@ menu.url({
 	url: 'https://github.com/Malex14/HAWTelegramBot',
 });
 menu.url({
-	text: '🦑 Quellcode Parer',
+	text: '🦑 Quellcode Parser',
 	url: 'https://github.com/Malex14/parser',
 });
 menu.url({
